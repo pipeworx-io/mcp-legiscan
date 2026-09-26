@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-legiscan",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "LegiScan MCP — wraps the LegiScan API (api.legiscan.com)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-e8d010d982942f5005241f1ed1a9c6fb3506701526f2db892af56a88fdeb9ebd",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-43f74998dabd456faca76cac38167bb071a01ee99aff8e424dd30b889f6619b6",
+    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
   }
 }

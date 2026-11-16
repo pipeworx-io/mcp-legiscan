@@ -1,6 +1,6 @@
 [
   {
-    "name": "search_bills",
+    "name": "legiscan_search_bills",
     "description": "Full-text search US state (and federal) legislation to find out what bills are about a given topic. Searches one state or nationwide (ALL) and returns matching bills with number, title, state, last action, and a LegiScan bill_id you can pass to get_bill. Example: search_bills({ query: \"data privacy\", state: \"CA\" })",
     "inputSchema": {
       "type": "object",
@@ -28,7 +28,7 @@
     }
   },
   {
-    "name": "get_bill",
+    "name": "legiscan_get_bill",
     "description": "Get the full detail for a single US legislative bill — status, sponsors (name/party/role), subjects, and links to the bill text. Use the bill_id returned by search_bills. Example: get_bill({ bill_id: 1234567 })",
     "inputSchema": {
       "type": "object",

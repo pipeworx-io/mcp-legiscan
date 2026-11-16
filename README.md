@@ -1,15 +1,15 @@
 # mcp-legiscan
 
-LegiScan MCP — wraps the LegiScan API (api.legiscan.com)
+Unofficial LegiScan MCP — wraps the LegiScan API (api.legiscan.com)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1865+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 2006+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `search_bills` | Full-text search US state (and federal) legislation to find out what bills are about a given topic. Searches one state or nationwide (ALL) and returns matching bills with number, title, state, last action, and a LegiScan bill_id you can pass to get_bill. Example: search_bills({ query: "data privacy", state: "CA" }) |
-| `get_bill` | Get the full detail for a single US legislative bill — status, sponsors (name/party/role), subjects, and links to the bill text. Use the bill_id returned by search_bills. Example: get_bill({ bill_id: 1234567 }) |
+| `legiscan_search_bills` | Full-text search US state (and federal) legislation to find out what bills are about a given topic. Searches one state or nationwide (ALL) and returns matching bills with number, title, state, last action, and a LegiScan bill_id you can pass to get_bill. Example: search_bills({ query: "data privacy", state: "CA" }) |
+| `legiscan_get_bill` | Get the full detail for a single US legislative bill — status, sponsors (name/party/role), subjects, and links to the bill text. Use the bill_id returned by search_bills. Example: get_bill({ bill_id: 1234567 }) |
 | `list_sessions` | List the legislative sessions for a US state (regular and special), with start/end years and session IDs. Useful to scope which session to track bills in. Example: list_sessions({ state: "NY" }) |
 
 ## Quick Start
@@ -56,7 +56,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1865+ data sources. The
+Both URLs reach the same gateway and the same 2006+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 
